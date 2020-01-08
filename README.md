@@ -35,8 +35,8 @@ docker login
 ```
 
 ```
-docker tag image-amazonlinux-build-docker-node syl20lego/amazonlinux-build-docker-node10:2
-docker push syl20lego/amazonlinux-build-docker-node10:2
+docker tag image-amazonlinux-build-docker-node syl20lego/amazonlinux-build-docker-node10:3
+docker push syl20lego/amazonlinux-build-docker-node10:3
 ```
 
 ```
