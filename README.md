@@ -14,14 +14,14 @@ docker login
 
   ```
   docker build --rm --no-cache -t image-amazonlinux-build-docker-node10 ./amazonlinux-build-docker-node10/
-  docker run -it image-amazonlinux-build-docker-node10 /bin/bash 
+  docker run -it image-amazonlinux-build-docker-node10 /bin/bash --name image-amazonlinux-build-docker-node10
   ```
 
   Publish:
 
   ```
   docker tag image-amazonlinux-build-docker-node10 syl20lego/amazonlinux-build-docker-node10:3
-  docker push syl20lego/amazonlinux-build-docker-node10:3
+  docker push syl20lego/amazonlinux-build-docker-node10:3 --name amazonlinux-build-docker-node10
   ```
 
 + amazonlinux-node 12:
@@ -32,16 +32,16 @@ docker login
 
   ```
   docker build --rm --no-cache -t image-amazonlinux-build-docker-node12 ./amazonlinux-build-docker-node12/
-  docker run -it image-amazonlinux-build-docker-node12 /bin/bash 
+  docker run -it image-amazonlinux-build-docker-node12 /bin/bash --name image-amazonlinux-build-docker-node12
   ```
   Publish:
 
   ```
-  docker tag image-amazonlinux-build-docker-node12 syl20lego/amazonlinux-build-docker-node12:2
-  docker push syl20lego/amazonlinux-build-docker-node12:2
+  docker tag image-amazonlinux-build-docker-node12 syl20lego/amazonlinux-build-docker-node12:3
+  docker push syl20lego/amazonlinux-build-docker-node12:3
   ```
 
- + amazonlinux-serverless-python3:
+ + amazonlinux-serverless-python36:
   AWS amzonelinux image node JS 12 for Fargate
   [syl20lego/amazonlinux-node12:1](https://hub.docker.com/repository/docker/syl20lego/amazonlinux-serverless/general])
 
@@ -50,13 +50,13 @@ docker login
 
   ```
   docker build --rm --no-cache  -t image-amazonlinux-serverless-python36 ./amazonlinux-serverless-python36/
-  docker run -it image-amazonlinux-serverless-python36 /bin/bash 
+  docker run -it image-amazonlinux-serverless-python36 /bin/bash --name image-amazonlinux-serverless-python36 
   ```
   Publish:
 
   ```
-  docker tag image-amazonlinux-serverless-python36 syl20lego/image-amazonlinux-serverless-python36:1
-  docker push syl20lego/image-amazonlinux-serverless-python36:1
+  docker tag image-amazonlinux-serverless-python36 syl20lego/image-amazonlinux-serverless-python36:2
+  docker push syl20lego/image-amazonlinux-serverless-python36:2
   ```
 
 
@@ -71,7 +71,7 @@ docker login
 
   ```
   docker build --rm --no-cache  -t image-amazonlinux-build-awscli-node ./amazonlinux-build-awscli-node/
-  docker run -it image-amazonlinux-build-awscli-node /bin/bash 
+  docker run -it image-amazonlinux-build-awscli-node /bin/bash --name image-amazonlinux-build-awscli-node
   ```
   Publish:
 
@@ -88,7 +88,7 @@ docker login
 
   ```
   docker build --rm --no-cache  -t image-amazonlinux-node ./amazonlinux-node/
-  docker run -it image-amazonlinux-node /bin/bash 
+  docker run -it image-amazonlinux-node /bin/bash --name image-amazonlinux-node
   ```
   Publish:
 
