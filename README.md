@@ -42,7 +42,7 @@ docker login
   ```
 
    
-   amazonlinux-node 1:4
+   amazonlinux-node 14
   AWS amzonelinux image node JS 14 for Fargate
   [syl20lego/image-amazonlinux-build-docker-node14:1](https://hub.docker.com/repository/docker/syl20lego/amazonlinux-node/general])
 
@@ -55,8 +55,8 @@ docker login
   Publish:
 
   ```
-  docker tag image-amazonlinux-build-docker-node14 syl20lego/amazonlinux-build-docker-node14:1
-  docker push syl20lego/amazonlinux-build-docker-node14:1
+  docker tag image-amazonlinux-build-docker-node14 syl20lego/amazonlinux-build-docker-node14:2
+  docker push syl20lego/amazonlinux-build-docker-node14:2
   ```
 
  + amazonlinux-serverless-python36:
