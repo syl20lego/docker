@@ -7,7 +7,7 @@ docker login
 ## List of custom docker images
 
 + amazonlinux-node 10:
-  AWS amzonelinux image node JS 10 for Fargate
+  AWS amzonelinux image node JS 10
   [syl20lego/image-amazonlinux-build-docker-node10:3](https://hub.docker.com/repository/docker/syl20lego/amazonlinux-node/general])
 
   Build:
@@ -25,7 +25,7 @@ docker login
   ```
 
 + amazonlinux-node 12:
-  AWS amzonelinux image node JS 12 for Fargate
+  AWS amzonelinux image node JS 12
   [syl20lego/image-amazonlinux-build-docker-node12:4](https://hub.docker.com/repository/docker/syl20lego/amazonlinux-node/general])
 
   Build:
@@ -43,7 +43,7 @@ docker login
 
    
 + amazonlinux-node 14
-  AWS amzonelinux image node JS 14 for Fargate
+  AWS amzonelinux image node JS 14
   [syl20lego/image-amazonlinux-build-docker-node14:3](https://hub.docker.com/repository/docker/syl20lego/amazonlinux-node/general])
 
   Build:
@@ -61,7 +61,7 @@ docker login
   ```
 
 + amazonlinux-node 16
-  AWS amzonelinux image node JS 16 for Fargate
+  AWS amzonelinux image node JS 16
   [syl20lego/image-amazonlinux-build-docker-node16:1](https://hub.docker.com/repository/docker/syl20lego/amazonlinux-node/general])
 
   Build:
@@ -79,8 +79,8 @@ docker login
   ```
 
 + amazonlinux-node 18
-  AWS amzonelinux image node JS 18 for Fargate
-  [syl20lego/image-amazonlinux-build-docker-node18:1](https://hub.docker.com/repository/docker/syl20lego/amazonlinux-node/general])
+  AWS amzonelinux image node JS 18
+  [syl20lego/image-amazonlinux-build-docker-node18:3](https://hub.docker.com/repository/docker/syl20lego/amazonlinux-node/general])
 
   Build:
 
@@ -91,9 +91,9 @@ docker login
   Publish:
 
   ```
-  docker tag image-amazonlinux-build-docker-node18 syl20lego/amazonlinux-build-docker-node18:1
-  docker push syl20lego/amazonlinux-build-docker-node18:1
-  docker run --rm -it syl20lego/amazonlinux-build-docker-node18:1 bin/bash
+  docker tag image-amazonlinux-build-docker-node18 syl20lego/amazonlinux-build-docker-node18:3
+  docker push syl20lego/amazonlinux-build-docker-node18:3
+  docker run --rm -it syl20lego/amazonlinux-build-docker-node18:3 bin/bash
   ```
 
  + amazonlinux-serverless-python36:
