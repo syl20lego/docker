@@ -80,7 +80,7 @@ docker login
 
 + amazonlinux-node 18
   AWS amzonelinux image node JS 18
-  [syl20lego/image-amazonlinux-build-docker-node18:3](https://hub.docker.com/repository/docker/syl20lego/amazonlinux-node/general])
+  [syl20lego/image-amazonlinux-build-docker-node18:4](https://hub.docker.com/repository/docker/syl20lego/amazonlinux-node/general])
 
   Build:
 
@@ -91,9 +91,9 @@ docker login
   Publish:
 
   ```
-  docker tag image-amazonlinux-build-docker-node18 syl20lego/amazonlinux-build-docker-node18:3
-  docker push syl20lego/amazonlinux-build-docker-node18:3
-  docker run --rm -it syl20lego/amazonlinux-build-docker-node18:3 bin/bash
+  docker tag image-amazonlinux-build-docker-node18 syl20lego/amazonlinux-build-docker-node18:4
+  docker push syl20lego/amazonlinux-build-docker-node18:4
+  docker run --rm -it syl20lego/amazonlinux-build-docker-node18:4 bin/bash
   ```
 
  + amazonlinux-serverless-python36:
