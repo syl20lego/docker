@@ -80,7 +80,7 @@ docker login
 
 + amazonlinux-node 18
   AWS amzonelinux image node JS 18
-  [syl20lego/image-amazonlinux-build-docker-node18:4](https://hub.docker.com/repository/docker/syl20lego/amazonlinux-node/general])
+  [syl20lego/image-amazonlinux-build-docker-node18:6](https://hub.docker.com/repository/docker/syl20lego/amazonlinux-node/general])
 
   Build:
 
@@ -91,9 +91,9 @@ docker login
   Publish:
 
   ```
-  docker tag image-amazonlinux-build-docker-node18 syl20lego/amazonlinux-build-docker-node18:4
-  docker push syl20lego/amazonlinux-build-docker-node18:4
-  docker run --rm -it syl20lego/amazonlinux-build-docker-node18:4 bin/bash
+  docker tag image-amazonlinux-build-docker-node18 syl20lego/amazonlinux-build-docker-node18:6
+  docker push syl20lego/amazonlinux-build-docker-node18:6
+  docker run --rm -it syl20lego/amazonlinux-build-docker-node18:6 bin/bash
   ```
 
  + amazonlinux-serverless-python36:
@@ -112,6 +112,26 @@ docker login
   ```
   docker tag image-amazonlinux-serverless-python36 syl20lego/image-amazonlinux-serverless-python36:2
   docker push syl20lego/image-amazonlinux-serverless-python36:2
+  ```
+
+
+
+ + amazonlinux-serverless-python39:
+  AWS amzonelinux image with Python 3.9 and Node 12.x
+  [syl20lego/amazonlinux-serverless-python39:1](https://hub.docker.com/repository/docker/syl20lego/amazonlinux-serverless/general])
+
+ 
+  Build:
+
+  ```
+  docker build --rm --no-cache  -t amazonlinux-serverless-python39 ./amazonlinux-serverless-python39/
+  docker run --name amazonlinux-serverless-python39 -it amazonlinux-serverless-python39 /bin/bash
+  ```
+  Publish:
+
+  ```
+  docker tag amazonlinux-serverless-python39 syl20lego/amazonlinux-serverless-python39:2
+  docker push syl20lego/amazonlinux-serverless-python39:2
   ```
 
 
