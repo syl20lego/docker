@@ -97,21 +97,21 @@ docker login
   ```
 
  + amazonlinux-serverless-python36:
-  AWS amzonelinux image with Python 3.6 and Node 12.x
-  [syl20lego/mage-amazonlinux-serverless-python36:2](https://hub.docker.com/repository/docker/syl20lego/amazonlinux-serverless/general])
+  AWS amzonelinux image with Python 3.6 and Node 16.x 
+  [syl20lego/amazonlinux-serverless-python36:1](https://hub.docker.com/repository/docker/syl20lego/amazonlinux-serverless/general])
 
  
   Build:
 
   ```
-  docker build --rm --no-cache  -t image-amazonlinux-serverless-python36 ./amazonlinux-serverless-python36/
-  docker run --name image-amazonlinux-serverless-python36 -it image-amazonlinux-serverless-python36 /bin/bash
+  docker build --rm --no-cache  -t amazonlinux-serverless-python36 ./amazonlinux-serverless-python36/
+  docker run --name amazonlinux-serverless-python36 -it amazonlinux-serverless-python36 /bin/bash
   ```
   Publish:
 
   ```
-  docker tag image-amazonlinux-serverless-python36 syl20lego/image-amazonlinux-serverless-python36:2
-  docker push syl20lego/image-amazonlinux-serverless-python36:2
+  docker tag amazonlinux-serverless-python36 syl20lego/amazonlinux-serverless-python36:1
+  docker push syl20lego/amazonlinux-serverless-python36:1
   ```
 
 
